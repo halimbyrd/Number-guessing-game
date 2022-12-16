@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <script defer src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="#">
+
+
+</head>
+<body>
+    <div class="wrapper container">
+        <div class="header-text">
+            <p>start guessing...</p>
+        </div>
+        <div class="guessing-game">
+            <div class="text"> 
+                <h3 class="title"> Number Guessing Game</h3>               
+                <p>Guess A Number Between 1 And 10</p>
+                <div class="label-chances">
+                  <p>Chances <span class="chances"> 4</span></p>
+               </div>
+           </div>
+           <input type="number">
+           <div class="submit">
+               <button class="submit-btn">Submit</button>
+           </div>
+           <div class="restart">
+              <button class="restart-btn">RESTART</button>
+           </div>
+           <div class="modal-overlay">  
+             <div class="modal">
+                <div class="modal-text">
+                    <p class="game-over-text">GAME OVER</p>
+                    <button class="play-again-text"> PLAY AGAIN</button>
+               </div>
+                 <audio class="game-over-audio">
+                      <source src="/Undertale OST  011 - Determination.mp3">
+                 </audio>
+           </div>
+         </div>
+
+      </div>
+    </div>
+</body>
+</html>

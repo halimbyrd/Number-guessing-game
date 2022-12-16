@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #2a3d50;
+}
+
+
+
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+
+
+.guessing-game {
+   background-color: white;
+   height: 350px;
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+.header-text {
+    color: #D3D3D3;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+.text {
+    text-align: center;
+    position: relative;
+    bottom: 15%;
+    font-size: 13px;
+    color: #463f3a;
+}
+
+
+
+
+
+.title {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+
+
+.label-chances {
+    margin-top: 15px;
+}
+
+
+
+input {
+    border: none;
+    outline: none;
+    border-bottom: solid 1px black;
+    margin-bottom: 25px;
+}
+
+
+
+.submit button {
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 15px;
+   width: 150px;
+  background-color: #004488;
+  color: white;
+}
+
+
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 419px;
+    width: 410px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+
+
+
+.modal-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;
+    flex-direction: column;
+}
+
+
+
+
+.game-over-text {
+    font-size: 40px;
+    color: red;
+    font-weight: 300;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+
+
+.play-again-text {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 22px;
+    cursor: pointer;
+   
+
+}
+
+
+
+.restart-btn {
+    position: relative;
+    top: 14px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #DBDADB;
+    color: #3F3E3E;
+    font-weight: 200;
+    border-radius: 10px;
+}
+
+
+
+/* OVERLAY */
+
+
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    visibility: hidden;
+}
+
+
+
+.active {
+    visibility: visible;
+}
